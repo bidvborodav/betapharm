@@ -1,0 +1,28 @@
+.swiss-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.swiss-grid-8 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .swiss-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .swiss-grid-8 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
