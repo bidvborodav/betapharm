@@ -25,7 +25,7 @@ export function SwissServices() {
   ]
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-12 md:py-16 lg:py-24">
       <div className="swiss-grid">
         {services.map((service, index) => (
           <div key={index} className="col-span-4">

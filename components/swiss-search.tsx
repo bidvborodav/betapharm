@@ -4,7 +4,7 @@ import AppleSearch from "./ui/search"
 
 export function SwissSearch() {
   return (
-    <section className="py-24">
+    <section className="py-12 md:py-16 lg:py-24">
       <div className="grid">
         <div className="col-span-8 flex flex-col items-center">
           <div className="border-2 border-black rounded-xl p-6 m-4 max-w-[640px]">

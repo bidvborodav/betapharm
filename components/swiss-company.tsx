@@ -24,7 +24,7 @@ export function SwissCompany() {
   ]
 
   return (
-    <section className="bg-blue-600 py-24 text-white">
+    <section className="bg-blue-600 py-12 md:py-16 lg:py-24 text-white">
       <div className="swiss-grid">
         {info.map((item, index) => (
           <div key={index} className="col-span-4">
