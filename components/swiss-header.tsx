@@ -1,12 +1,10 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Input } from "@/components/ui/input"
-import { Search } from "lucide-react"
 import AppleSearch from "@/components/ui/search"
 
 export function SwissHeader() {
   return (
-    <header className="fixed top-2 rounded-full z-50 w-5/6 bg-blue/80 backdrop-blur-sm shadow-md shadow-blue-100/10 place-items-center">
+    <header className="fixed top-2 rounded-full z-50 w-5/6 bg-blue/80 backdrop-blur-sm shadow-md shadow-blue-100/10">
       <div className="swiss-grid h-12 m-4">
         <div className="col-span-2 flex items-center">
           <Link href="/" className="flex items-center">
