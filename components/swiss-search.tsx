@@ -7,7 +7,7 @@ export function SwissSearch() {
     <section className="py-24">
       <div className="grid">
         <div className="col-span-8 flex flex-col items-center">
-          <div className="border-2 border-black rounded-xl p-4">
+          <div className="border-2 border-black rounded-xl p-6 m-4 max-w-[640px]">
           <h2 className="mb-8 text-4xl font-bold tracking-tight">Informationen zu unserem Arzneisortiment</h2>
           <p className="mb-12 text-xl text-gray-600">
             Hier stellen wir Ihnen die Beipackzettel unserer Arzneimittel zur Verfügung.

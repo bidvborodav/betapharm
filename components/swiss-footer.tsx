@@ -30,39 +30,57 @@ export function SwissFooter() {
 
   return (
     <footer className="border-t bg-gray-100">
-      <div className="swiss-grid py-24">
-        {Object.entries(footerLinks).map(([category, links]) => (
-          <div key={category} className="col-span-3">
-            <h4 className="text-lg font-medium uppercase tracking-wide">{category}</h4>
-            <ul className="mt-8 space-y-4">
-              {links.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-gray-600 hover:text-gray-900">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div className="mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-12 lg:py-16">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {Object.entries(footerLinks).map(([category, links]) => (
+            <div key={category} className="space-y-4">
+              <h4 className="text-lg font-medium uppercase tracking-wide">
+                {category}
+              </h4>
+              <ul className="space-y-3">
+                {links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
 
-        <div className="col-span-12 mt-24 border-t pt-12">
-          <div className="swiss-grid-8">
-            <div className="col-span-4">
-              <p className="text-sm text-gray-600">betapharm Arzneimittel GmbH</p>
+        <div className="mt-12 border-t pt-8">
+          <div className="flex flex-col space-y-8 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
+            <div className="max-w-md">
+              <p className="text-sm text-gray-600">
+                betapharm Arzneimittel GmbH
+              </p>
               <p className="mt-2 text-sm text-gray-600">
                 Seit 2006 gehört betapharm zum internationalen Pharmakozern Dr. Reddy's Laboratories.
               </p>
             </div>
 
-            <div className="col-span-4 flex justify-end gap-8">
-              <Link href="/impressum" className="text-sm text-gray-600 hover:text-gray-900">
+            <div className="flex flex-wrap gap-6">
+              <Link
+                href="/impressum"
+                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              >
                 Impressum
               </Link>
-              <Link href="/datenschutz" className="text-sm text-gray-600 hover:text-gray-900">
+              <Link
+                href="/datenschutz"
+                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              >
                 Datenschutz
               </Link>
-              <Link href="/agb" className="text-sm text-gray-600 hover:text-gray-900">
+              <Link
+                href="/agb"
+                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              >
                 AGB
               </Link>
             </div>
@@ -73,3 +91,4 @@ export function SwissFooter() {
   )
 }
 
+export default SwissFooter
