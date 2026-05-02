@@ -9,7 +9,7 @@ export function SwissHeader() {
         <div className="col-span-2 flex items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="https://betapharm.de/typo3conf/ext/twtdh_layoutpackage/Resources/Public/Images/Layout/betapharm-logo.png"
+              src="https://www.betapharm.de/themes/custom/drl_betapharm/logo.png"
               alt="betapharm Logo"
               width={150}
               height={40}
