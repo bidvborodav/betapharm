@@ -26,7 +26,7 @@ export function SwissInfo() {
 
           <div className="h-64 md:h-96 lg:h-[600px]">
             <Image
-              src="https://betapharm.de/fileadmin/_processed_/b/5/csm_639800036_290869a26a.jpg"
+              src="https://www.betapharm.de/sites/g/files/nstucr526/files/2025-05/csm_639800036_290869a26a.jpg"
               alt="Family outdoors"
               width={800}
               height={600}
