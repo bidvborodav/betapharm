@@ -125,7 +125,7 @@ const AdaptiveHeader: React.FC = () => {
         <div className="flex items-center p-2">
           <Link href="/" className="flex items-center">
             <Image
-              src="https://betapharm.de/typo3conf/ext/twtdh_layoutpackage/Resources/Public/Images/Layout/betapharm-logo.png"
+              src="https://www.betapharm.de/themes/custom/drl_betapharm/logo.png"
               alt="betapharm Logo"
               width={150}
               height={40}
